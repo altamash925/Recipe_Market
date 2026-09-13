@@ -1,0 +1,169 @@
+.recipe-details-page {
+  min-height: calc(100vh - 72px);
+  padding: 50px 70px 80px;
+  background-color: #fffdf9;
+}
+
+
+/* Header */
+
+.recipe-details-header {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+/* Image */
+
+.recipe-details-image {
+  width: 100%;
+  height: 400px;
+
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.recipe-details-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Information */
+
+.recipe-details-info {
+  padding: 10px 0;
+}
+
+.recipe-category {
+  color: #e94b20;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.recipe-details-info h1 {
+  margin: 10px 0 15px;
+
+  color: #222;
+
+  font-size: 42px;
+}
+
+.recipe-description {
+  max-width: 500px;
+
+  color: #777;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* Rating */
+
+.recipe-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin: 20px 0;
+
+  color: #e94b20;
+
+  font-weight: 600;
+}
+
+.rating-text {
+  color: #888;
+
+  font-weight: 400;
+  font-size: 13px;
+}
+
+
+/* Meta */
+
+.recipe-meta {
+  display: flex;
+  gap: 35px;
+
+  margin: 25px 0;
+}
+
+.recipe-meta div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #e94b20;
+}
+
+.recipe-meta span {
+  display: flex;
+  flex-direction: column;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+.recipe-meta strong {
+  color: #333;
+
+  font-size: 14px;
+}
+
+/* Ingredients */
+
+.ingredients-section {
+  max-width: 1200px;
+
+  margin: 60px auto 0;
+
+  padding: 30px;
+
+  background-color: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+}
+
+.ingredients-section h2,
+.related-section h2 {
+  margin: 0 0 22px;
+
+  color: #222;
+
+  font-size: 25px;
+}
+
+.ingredients-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.ingredients-list div {
+  padding: 12px 15px;
+
+  background-color: #fff8f4;
+
+  border-radius: 6px;
+
+  color: #555;
+
+  font-size: 14px;
+}

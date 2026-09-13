@@ -1,0 +1,303 @@
+.recipes-page {
+  min-height: calc(100vh - 72px);
+
+  padding: 50px 70px 80px;
+
+  background-color: #fffdf9;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.recipes-header {
+  max-width: 1400px;
+
+  margin: 0 auto 30px;
+}
+
+.section-label {
+  margin: 0 0 6px;
+
+  color: #e94b20;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.recipes-header h1 {
+  margin: 0;
+
+  color: #222;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.recipes-header p:last-child {
+  margin: 8px 0 0;
+
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   CATEGORY FILTERS
+========================= */
+
+.category-filters {
+  max-width: 1400px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  gap: 10px;
+}
+
+.category-filter {
+  padding: 9px 20px;
+
+  background-color: white;
+
+  border: 1px solid #e3e3e3;
+  border-radius: 20px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.category-filter:hover {
+  border-color: #e94b20;
+
+  color: #e94b20;
+}
+
+.category-filter.active {
+  background-color: #e94b20;
+
+  border-color: #e94b20;
+
+  color: white;
+}
+
+
+/* =========================
+   RECIPE COUNT
+========================= */
+
+.recipe-count {
+  max-width: 1400px;
+
+  margin: 0 auto 18px;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+.recipe-count span {
+  color: #222;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   RECIPE GRID
+========================= */
+
+.recipes-grid {
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================
+   RECIPE CARD
+========================= */
+
+.recipe-card {
+  overflow: hidden;
+
+  background-color: white;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 12px;
+
+  transition: 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   RECIPE IMAGE
+========================= */
+
+.recipe-image-container {
+  position: relative;
+
+  width: 100%;
+  height: 220px;
+
+  overflow: hidden;
+}
+
+.recipe-image-container img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   FAVORITE BUTTON
+========================= */
+
+.favorite-button {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+
+  border: none;
+  border-radius: 50%;
+
+  color: #555;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.favorite-button:hover {
+  color: #e94b20;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.recipe-card-content {
+  padding: 20px;
+}
+
+.recipe-category {
+  color: #e94b20;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.recipe-card h2 {
+  margin: 8px 0 15px;
+
+  color: #222;
+
+  font-size: 20px;
+}
+
+
+/* =========================
+   RECIPE DETAILS
+========================= */
+
+.recipe-details {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.recipe-details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.recipe-details span:last-child {
+  color: #e94b20;
+}
+
+
+/* =========================
+   VIEW RECIPE BUTTON
+========================= */
+
+.view-recipe-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  width: 100%;
+  padding: 10px;
+
+  background-color: #fff1eb;
+
+  border: none;
+  border-radius: 6px;
+
+  color: #e94b20;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+.view-recipe-button:hover {
+  background-color: #e94b20;
+
+  color: white;
+}
+
+
