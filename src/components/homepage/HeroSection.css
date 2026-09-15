@@ -12,7 +12,7 @@
     margin-bottom: 1rem;
     position: relative;
     width: 80%;
-    height: calc(100vh - 172px);
+    min-height: calc(100vh - 172px);
     padding: 0px 70px;
     display: flex;
     align-items: center;

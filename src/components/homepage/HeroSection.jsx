@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+
+import pasta from '../../assets/pasta-banner.png'
+
 import "./HeroSection.css";
 
 function HeroSection() {
@@ -9,7 +12,7 @@ function HeroSection() {
 
         <div className="hero-image">
           <img
-            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+            src={pasta}
             alt="Delicious pasta"
           />
         </div>
@@ -26,8 +29,7 @@ function HeroSection() {
           </h1>
 
           <p className="hero-description">
-            Discover simple, delicious recipes and cooking ideas
-            for every occasion.
+            Discover simple, delicious recipes and cooking ideas from around the world.
           </p>
 
           <Link to="/recipes" className="explore-button">

@@ -3,3 +3,27 @@
   height: calc(100vh - 72px);
   padding-bottom: 70px;
 }
+
+.scroll-icon {
+  min-height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e94b20;
+
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
