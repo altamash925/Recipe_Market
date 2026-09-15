@@ -6,9 +6,20 @@ const ShareRecipe = () => {
   const [category, setCategory] = useState("");
   const [time, setTime] = useState("");
   const [ingredients, setIngredients] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleClear = () => {
+    setRecipeName("");
+    setCategory("");
+    setTime("");
+    setIngredients("");
+    setMessage("");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setMessage("Recipe added successfully!");
 
     console.log({
       recipeName,
@@ -58,6 +69,7 @@ const ShareRecipe = () => {
             Fill in the details of your recipe below.
           </p>
 
+          {message && <p className="success-message">{message}</p>}
 
           <form onSubmit={handleSubmit}>
 
@@ -158,6 +170,7 @@ const ShareRecipe = () => {
               <button
                 type="button"
                 className="clear-button"
+                onClick={handleClear}
               >
                 Clear
               </button>

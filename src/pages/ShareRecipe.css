@@ -226,3 +226,12 @@
 .add-recipe-button:hover {
   background-color: #c93d18;
 }
+
+.success-message {
+  margin-bottom: 18px;
+  padding: 10px;
+  background-color: #eef9ee;
+  border-radius: 6px;
+  color: #2e7d32;
+  font-size: 13px;
+}
