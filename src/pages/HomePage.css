@@ -4,13 +4,14 @@
   padding-bottom: 70px;
 }
 
-.scroll-icon {
-  min-height: 74px;
+.scroll-icon-div {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e94b20;
+  min-height: 74px;
+}
 
+.scroll-icon {
   animation: float 2s ease-in-out infinite;
 }
 
@@ -26,4 +27,9 @@
   100% {
     transform: translateY(0);
   }
+}
+
+.scroll-icon:hover {
+  color: #e94b20;
+  cursor: pointer;
 }
