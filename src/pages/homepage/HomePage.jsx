@@ -1,8 +1,8 @@
 import "./HomePage.css";
 
 import { useRef } from "react";
-import HeroSection from "../components/homepage/HeroSection";
-import PopularRecipes from "../components/homepage/PopularRecipes";
+import HeroSection from "./herosection/HeroSection";
+import PopularRecipes from "./popularrecipes/PopularRecipes";
 import { ArrowDownToLine } from "lucide-react";
 
 function HomePage() {

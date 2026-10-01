@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Star } from "lucide-react";
 
-import biryani from '../../assets/biryani.jpg'
-import pasta from '../../assets/pasta.jpg'
+import biryani from '../../../assets/biryani.jpg'
+import pasta from '../../../assets/pasta.jpg'
 
 import './PopularRecipes.css';
 
@@ -12,8 +12,8 @@ const PopularRecipes = () => {
 
         <div className="section-heading">
           <div>
-            <p className="section-label">TRY SOMETHING NEW</p>
-            <h2>Popular Recipes</h2>
+            {/* <p className="section-label">TRY SOMETHING NEW</p> */}
+            <h2>Indian</h2>
           </div>
 
           <Link to="/recipes" className="view-all">
@@ -21,7 +21,6 @@ const PopularRecipes = () => {
             <ArrowRight size={16} />
           </Link>
         </div>
-
 
         <div className="recipe-cards">
 
@@ -156,6 +155,18 @@ const PopularRecipes = () => {
 
           </div>
 
+        </div>
+
+        <div className="section-heading">
+          <div>
+            {/* <p className="section-label">TRY SOMETHING NEW</p> */}
+            <h2>American</h2>
+          </div>
+
+          <Link to="/recipes" className="view-all">
+            View All
+            <ArrowRight size={16} />
+          </Link>
         </div>
 
         <div className="recipe-cards">
