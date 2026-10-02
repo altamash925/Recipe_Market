@@ -3,6 +3,7 @@ const app = express();
 
 const popularRecipes = require('./routes/popularRecipes');
 const notFound = require('./middlewares/notFound');
+const errorHandler = require('./middlewares/errorHandler');
 
 app.use(express.json());
 
@@ -11,5 +12,6 @@ app.use('/popular-recipes', popularRecipes);
 
 //middlewares
 app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
