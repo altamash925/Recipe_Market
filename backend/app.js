@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
 
+const popularRecipes = require('./routes/popularRecipes');
+const notFound = require('./middlewares/notFound');
+
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('backend is now created');
-});
+//routes
+app.use('/popular-recipes', popularRecipes);
+
+//middlewares
+app.use(notFound);
 
 module.exports = app;
