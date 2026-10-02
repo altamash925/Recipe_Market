@@ -3,6 +3,6 @@ const router = express.Router();
 
 const popularRecipes = require('../controllers/popularRecipes');
 
-router.get('/', popularRecipes);
+router.get('/:area', popularRecipes);
 
 module.exports = router;
