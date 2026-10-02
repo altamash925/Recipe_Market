@@ -30,23 +30,23 @@ const RecipeCards = () => {
 
                     <div className="recipe-card-content">
 
-                    <span className="recipe-category">LUNCH</span>
+                        {/* <span className="recipe-category">LUNCH</span> */}
 
-                    <h3>Chicken Biryani</h3>
+                        <h3>Chicken Biryani</h3>
 
-                    <div className="recipe-info">
+                        {/* <div className="recipe-info">
 
-                        <span>
-                        <Clock size={15} />
-                        60 min
-                        </span>
+                            <span>
+                            <Clock size={15} />
+                            60 min
+                            </span>
 
-                        <span>
-                        <Star size={15} fill="currentColor" />
-                        4.8
-                        </span>
+                            <span>
+                            <Star size={15} fill="currentColor" />
+                            4.8
+                            </span>
 
-                    </div>
+                        </div> */}
 
                     </div>
 
